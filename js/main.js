@@ -21,7 +21,10 @@ $(function(){
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      preload: [0,1]
     },
+  });
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
   });
 });

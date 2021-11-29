@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>САФАРИ ТУРИСТИК</title>
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -20,13 +20,24 @@
       <div class="header__inner">
         <div class="header__top">
           <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+            <p class="logo__text">
+              САФАРИ ТУРИСТИК<br>
+              <span class="logo__text--mini">Турагентство</span>
+            </p>
           </a>
           <div class="header__phone">
-            Заказ туров и бронирование:
-            <a class="header__phone-number" href="tel:80508543543">тел. 8-050-8-543-543</a>
+            <span class="header__phone-text">
+              Заказ туров и бронирование:
+            </span>
+            <a class="header__phone-number" href="tel:80508543543">
+              тел. 8-050-8-543-543
+            </a>
           </div>
           <nav class="menu">
+            <button class="menu__btn">
+              <span class="row"></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">Бронирование</a>
@@ -49,12 +60,11 @@
         <h1 class="header__title">Сафари по Африке</h1>
         <div class="header__content">
           <p class="header__description">
-            Туры по самомым экзотическим местам<br>
             Поехали с нами за новыми впечатлениями!
           </p>
           <a class="header__btn" href="#">Оставить заявку</a>
           <div class="header__arrow">
-            <a class="header__arrow-link" href="#">
+            <a class="header__arrow-link" href="#direction">
               <img class="header__arrow-img" src="images/arrow.svg" alt="#">
             </a>
           </div>
@@ -62,7 +72,7 @@
       </div>
     </div>
   </header>
-  <div class="direction">
+  <div class="direction" id="direction">
     <div class="container">
       <div class="direction__inner">
         <div class="direction__item">
@@ -215,7 +225,7 @@
   <section class="map">
     <div class="container">
       <h2 class="map__title title">Карта Африки</h2>
-      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29355497.696198106!2d47.771845801093555!3d-15.182642905893369!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1637946718020!5m2!1sru!2sua" width="1120" height="610" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29355497.696198106!2d47.771845801093555!3d-15.182642905893369!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1637946718020!5m2!1sru!2sua" width="100%" height="610" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
   <section class="about">
@@ -312,38 +322,93 @@
       </div>
       <div class="tour__info">
         <div class="tour__info-item">
-          16
-          <p class="tour__info-text">
-            лет успешной работы
-          </p>
+          <span class="tour__info-item--big">16</span>
+          лет успешной работы
         </div>
         <div class="tour__info-item">
-          50
-          <p class="tour__info-text">
-            гостиниц без посредников
-          </p>
+          <span class="tour__info-item--big">50</span>
+          гостиниц без посредников
         </div>
         <div class="tour__info-item">
-          25+
-          <p class="tour__info-text">
-            собственных туров
-          </p>
+          <span class="tour__info-item--big">25+</span>
+          собственных туров
         </div>
         <div class="tour__info-item">
-          1 220 000
-          <p class="tour__info-text">
-            кв. км – площадь наших путешествий
-          </p>
+          <span class="tour__info-item--big">1 220 000</span>
+          кв. км – площадь наших путешествий
         </div>
         <div class="tour__info-item">
-          5000
-          <p class="tour__info-text">
-            довольных туристов
-          </p>
+          <span class="tour__info-item--big">5000</span>
+          довольных туристов
         </div>
       </div>
     </div>
   </section>
+  <section class="booking">
+    <div class="container">
+      <h2 class="booking__title title">
+        Забронируйте отдых в Африке
+      </h2>
+      <form class="booking__form">
+        <input class="booking__input" type="text" placeholder="Ваше имя">
+        <input class="booking__input" type="text" placeholder="Телефон">
+        <input class="booking__input" type="text" placeholder="E-mail">
+        <textarea class="booking__area" placeholder="Комментарий"></textarea>
+        <button class="booking__btn" type="submit">Отправить заявку</button>
+        <label class="booking__label">
+          <input class="booking__checkbox" type="checkbox">
+          <span class="booking__checkbox-style"></span>
+          Согласие на обработку персональных данных
+        </label>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="#">
+          <p class="logo__text">
+            САФАРИ ТУРИСТИК<br>
+            <span class="logo__text--mini">Турагентство</span>
+          </p>
+        </a>
+      </div>
+      <div class="footer__box">
+        <div class="footer__info">
+          <p class="footer__box-title">
+            Турагентство «Сафари Туристик»
+          </p>
+          <p class="footer__copy">
+            © 2021. Все права защищены
+          </p>
+          <a class="footer__link" href="#">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer__address">
+          <p class="footer__box-title">
+            Адрес:
+          </p>
+          <p class="footer__address-text">
+            г. Киев, ул.Мира, 20,
+            отель «Динамо», 1 этаж
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__box-title">
+            Заказ туров и бронирование:
+          </p>
+          <a class="footer__phone" href="tel:80508543543">
+            тел. 8-050-8-543-543
+          </a>
+          <a class="footer__mail" href="mailto:safari_turistic@gmail.com">
+            e-mail: safari_turistic@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
